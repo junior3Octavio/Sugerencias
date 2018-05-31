@@ -1,8 +1,8 @@
 {
-    "title": "One Page Wonder",
-    "name": "startbootstrap-one-page-wonder",
+    "title": "Clean Blog",
+    "name": "startbootstrap-clean-blog",
     "version": "4.1.1",
-    "description": "A one page HTML template built with Bootstrap",
+    "description": "Clean Blog is a Medium inspired blog theme for Bootstrap.",
     "keywords": [
         "css",
         "sass",
@@ -11,9 +11,9 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/one-page-wonder",
+    "homepage": "https://startbootstrap.com/template-overviews/clean-blog",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/issues",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-clean-blog/issues",
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
@@ -23,18 +23,20 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-one-page-wonder.git"
+        "url": "https://github.com/BlackrockDigital/startbootstrap-clean-blog.git"
     },
     "dependencies": {
         "bootstrap": "4.1.1",
+        "font-awesome": "4.7.0",
         "jquery": "3.3.1"
     },
     "devDependencies": {
-        "browser-sync": "2.24.2",
+        "browser-sync": "2.24.3",
         "gulp": "^3.9.1",
-        "gulp-clean-css": "3.9.3",
+        "gulp-clean-css": "3.9.4",
         "gulp-header": "2.0.5",
         "gulp-rename": "^1.2.2",
-        "gulp-sass": "4.0.1"
+        "gulp-sass": "4.0.1",
+        "gulp-uglify": "3.0.0"
     }
 }
