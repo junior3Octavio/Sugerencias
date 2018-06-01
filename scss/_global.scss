@@ -1,9 +1,6 @@
+// Typography
 body {
   @include body-font;
-  background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url('../img/bg.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
 }
 
 h1,
@@ -15,52 +12,84 @@ h6 {
   @include heading-font;
 }
 
-p {
-  line-height: 1.75;
+// Custom Horizontal Rule with Star Icon
+hr.star-light,
+hr.star-dark {
+  max-width: 15rem;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
-.text-faded {
-  color: fade-out($white, 0.7);
+hr.star-light:after,
+hr.star-dark:after {
+  position: relative;
+  top: -.8em;
+  display: inline-block;
+  padding: 0 0.25em;
+  content: '\f005';
+  font-family: FontAwesome;
+  font-size: 2em;
 }
 
-.site-heading {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  text-transform: uppercase;
-  line-height: 1;
+hr.star-light {
+  border-color: $white;
+}
+hr.star-light:after {
+  color: $white;
+  background-color: $primary;
+}
 
-  @include heading-font;
-  .site-heading-upper {
-    display: block;
-    font-size: 2rem;
-    font-weight: 800;
+hr.star-dark {
+  border-color: $secondary;
+}
+hr.star-dark:after {
+  color: $secondary;
+  background-color: white;
+}
+
+// Section Padding Settings
+section {
+  padding: 6rem 0;
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2rem;
   }
-  .site-heading-lower {
-    font-size: 5rem;
-    font-weight: 100;
-    line-height: 4rem;
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
   }
 }
 
-.page-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+// Custom Button Size
+.btn-xl {
+  padding: 1rem 1.75rem;
+  font-size: 1.25rem;
 }
 
-.section-heading {
-  text-transform: uppercase;
-  .section-heading-upper {
-    display: block;
-    font-size: 1rem;
-    font-weight: 800;
-  }
-  .section-heading-lower {
-    display: block;
-    font-size: 3rem;
-    font-weight: 100;
-  }
+// Custom Rounded Social Button
+.btn-social {
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
 
-.bg-faded {
-  background-color: fade-out($white, 0.15);
+// Scroll to Top Button
+.scroll-to-top {
+  z-index: 1042;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  a {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: fade-out($gray-900, 0.5);
+    line-height: 3.1rem;
+  }
 }

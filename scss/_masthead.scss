@@ -1,82 +1,26 @@
-// Styling for the masthead
 header.masthead {
-  // TIP: Background images are set within the HTML using inline CSS!
-  margin-bottom: 50px;
-  background: no-repeat center center;
-  background-color: $gray-600;
-  background-attachment: scroll;
-  position: relative;
-  @include background-cover;
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: $gray-900;
-    opacity: 0.5;
+  padding-top: calc(6rem + 72px);
+  padding-bottom: 6rem;
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
   }
-  .page-heading,
-  .post-heading,
-  .site-heading {
-    padding: 200px 0 150px;
-    color: white;
-    @media only screen and (min-width: 768px) {
-      padding: 200px 0;
-    }
+  h2 {
+    font-size: 1.3rem;
+    @include body-font;
   }
-  .page-heading,
-  .site-heading {
-    text-align: center;
+}
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(6rem + 106px);
+    padding-bottom: 6rem;
     h1 {
-      font-size: 50px;
-      margin-top: 0;
+      font-size: 4.75em;
+      line-height: 4rem;
     }
-    .subheading {
-      font-size: 24px;
-      font-weight: 300;
-      line-height: 1.1;
-      display: block;
-      margin: 10px 0 0;
-      @include sans-serif-font;
+    h2 {
+      font-size: 1.75em;
     }
-    @media only screen and (min-width: 768px) {
-      h1 {
-        font-size: 80px;
-      }
-    }
-  }
-  .post-heading {
-    h1 {
-      font-size: 35px;
-    }
-    .meta,
-    .subheading {
-      line-height: 1.1;
-      display: block;
-    }
-    .subheading {
-      font-size: 24px;
-      font-weight: 600;
-      margin: 10px 0 30px;
-      @include sans-serif-font;
-    }
-    .meta {
-      font-size: 20px;
-      font-weight: 300;
-      font-style: italic;
-      @include serif-font;
-      a {
-        color: $white;
-      }
-    }
-    @media only screen and (min-width: 768px) {
-      h1 {
-        font-size: 55px;
-      }
-      .subheading {
-        font-size: 30px;
-      }
-    }
+
   }
 }
